@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(168, 190, 199);
+    max-width: fit-content;
+}
+
+.portadaContenedora{
+    position: relative;
+    display: inline-block;
+    float: none;
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+}
+
+div img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.textoEncima{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(51, 50, 50);
+}
+
+article{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.formacionbanda{
+    float: right;
+    border-style: none;
+    margin: 2%;
+    margin-right: 10%;
+}
+
+.subtitulo{
+    margin-left: 10%;
+    text-decoration: underline;
+    color: rgb(173, 33, 33);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5%;
+    row-gap: 3%;
+    max-width: 80%;
+    justify-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    }
+
+section div img{
+    height: 250px;
+    width: 250px;
+    border-style: groove;
+    border-color: rgb(150, 150, 150);
+    }
+
+
