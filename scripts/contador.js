@@ -17,14 +17,3 @@ function reseteocontador(){
 
 // *********** nav links ***********
 
-const navToggle = document.querySelector(".nav-toggle");
-const links = document.querySelector(".links");
-
-navToggle.addEventListener("click", function () {
-    links.classList.toggle("show-links");
-});
-
-// *********** date ***********
-const date = document.getElementById ("date");
-date.innerHTML = new Date().getFullYear();
-

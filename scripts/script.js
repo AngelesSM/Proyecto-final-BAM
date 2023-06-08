@@ -24,6 +24,6 @@ function validarFormulario(evento) {
     document.formulario.submit();
 }
 
-// *********** date ***********
+// *********** fecha ***********
 const date = document.getElementById ("date");
 date.innerHTML = new Date().getFullYear();
