@@ -1,0 +1,137 @@
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(136, 210, 136);
+    font-family: sans-serif;
+    background: hsl(210, 36%, 96%);
+    color: hsl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+	background: #eeeff4;
+}
+
+.cards_wrap{
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cards_wrap .card_item{
+	padding: 15px 25px;
+	width: 25%;
+}
+
+.cards_wrap .card_inner{
+	background: #fff;
+	border-radius: 5px;
+	padding: 35px 20px;
+	min-width: 225px;
+	min-height: 315px;
+	max-height: 370px;
+	width: 100%;
+}
+
+.cards_wrap .card_item img{
+	width: 80px;
+	height: 80px;
+	margin-bottom: 5px;
+}
+
+.cards_wrap .card_item .card_title{
+	color: #e36686;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 20px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards_wrap .card_item .card_text{
+	font-size: 14px;
+	line-height: 24px;
+	color: #7b8ca0;
+}
+
+@media screen and (max-width: 1024px){
+	.cards_wrap .card_item{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.cards_wrap .card_item{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 568px){
+	.cards_wrap .card_item{
+		width: 100%;
+	}
+}
+
+.contador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: black;
+}
+
+button{
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: beige;
+    text-transform: uppercase;
+}
+
+footer{
+    background: grey;
+    padding: 5rem 1rem;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    margin-bottom: 0;
+}
+
+.card{
+    flex: 0 1 calc(25% - 1em);
+    padding: 5%;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
